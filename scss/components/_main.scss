@@ -35,6 +35,10 @@ html {
   color: $primary;
 }
 
+.btn {
+  @include btn;
+}
+
 .right {
   display: inline-block;
   text-align: center;
@@ -46,43 +50,22 @@ html {
 
 .down:hover {
   transform: translateY(10px);
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .left:hover {
   transform: translateX(10px);
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .up:hover {
   transform: translateY(-10px);
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .right:hover {
   transform: translateX(-10px);
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-}
-
-.btn {
-  background-color: #ff66b3;
-  font-weight: bold;
-  text-decoration: none;
-  padding: .5em 1em;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  text-align: center;
-  color: #99004d;
-  font-family: Raleway, Helvetica;
-  font-weight: 400;
-  margin-bottom: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
 }
 
 .btn i {
@@ -91,13 +74,7 @@ html {
 }
 
 .btn:hover {
-  -webkit-animation: rot-btn 1s infinite;
   animation: rot-btn 1s infinite;
-}
-
-.btn:active {
-  background-color: #e60099;
-  color: #660044;
 }
 
 .wrapper {
